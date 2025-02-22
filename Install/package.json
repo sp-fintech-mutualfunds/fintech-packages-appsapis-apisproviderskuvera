@@ -1,0 +1,54 @@
+{
+	"name" : "ApisProvidersKuvera",
+	"display_name" : "Providers Kuvera API",
+	"description" : "<p>Package for connecting to Providers Kuvera using API</p>",
+	"module_type" : "packages",
+	"app_type" : "fintech",
+	"category" : "appsapis",
+	"version" : "0.0.0",
+	"repo" : "https://github.com/sp-fintech/fintech-packages-appsapis-apisproviderskuvera",
+	"class" : "Apps\\Fintech\\Packages\\Apis\\Providers\\Kuvera\\ApisProvidersKuvera",
+	"dependencies" : 
+	{
+		"core" : 
+		{
+			"name" : "Core",
+			"version" : "0.0.0-rc.9",
+			"repo" : "https://github.com/sp-framework/core"
+		},
+		"apptype" : 
+		{
+			"name" : "Fintech",
+			"version" : "0.3.0",
+			"repo" : "https://github.com/sp-fintech/fintech"
+		},
+		"packages" : 
+		[
+			{
+				"name" : "ApisProviders",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-fintech/fintech-packages-apis-apisproviders"
+			}
+		],
+		"middlewares" : [],
+		"externals" : 
+		{
+			"composer" : 
+			{
+				"require" : []
+			},
+			"config" : 
+			{
+				"allow-plugins" : []
+			},
+			"extra" : 
+			{
+				"patches" : []
+			}
+		}
+	},
+	"settings" : 
+	{
+		"componentRoute" : "system/api/clients/services"
+	}
+}

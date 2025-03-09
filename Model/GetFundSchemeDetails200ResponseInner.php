@@ -89,7 +89,7 @@ class GetFundSchemeDetails200ResponseInner implements ModelInterface, ArrayAcces
         'switch_allowed' => 'string',
         'stp_flag' => 'string',
         'swp_flag' => 'string',
-        'sips' => '\Apps\Fintech\Packages\Apis\Providers\Kuvera\Model\GetFundSchemeDetails200ResponseInnerSipsInner[]',
+        'sips' => 'mixed[]',
         'instant' => 'string',
         'reinvestment' => 'string',
         'tags' => 'mixed[]',
@@ -820,10 +820,6 @@ class GetFundSchemeDetails200ResponseInner implements ModelInterface, ArrayAcces
         if ($this->container['sips'] === null) {
             $invalidProperties[] = "'sips' can't be null";
         }
-        if ((count($this->container['sips']) < 1)) {
-            $invalidProperties[] = "invalid value for 'sips', number of items must be greater than or equal to 1.";
-        }
-
         if ($this->container['instant'] === null) {
             $invalidProperties[] = "'instant' can't be null";
         }
@@ -1881,7 +1877,7 @@ class GetFundSchemeDetails200ResponseInner implements ModelInterface, ArrayAcces
     /**
      * Gets sips
      *
-     * @return \Apps\Fintech\Packages\Apis\Providers\Kuvera\Model\GetFundSchemeDetails200ResponseInnerSipsInner[]
+     * @return mixed[]
      */
     public function getSips()
     {
@@ -1891,7 +1887,7 @@ class GetFundSchemeDetails200ResponseInner implements ModelInterface, ArrayAcces
     /**
      * Sets sips
      *
-     * @param \Apps\Fintech\Packages\Apis\Providers\Kuvera\Model\GetFundSchemeDetails200ResponseInnerSipsInner[] $sips sips
+     * @param mixed[] $sips sips
      *
      * @return self
      */
@@ -1899,11 +1895,6 @@ class GetFundSchemeDetails200ResponseInner implements ModelInterface, ArrayAcces
     {
         if (is_null($sips)) {
             throw new \InvalidArgumentException('non-nullable sips cannot be null');
-        }
-
-
-        if ((count($sips) < 1)) {
-            throw new \InvalidArgumentException('invalid length for $sips when calling GetFundSchemeDetails200ResponseInner., number of items must be greater than or equal to 1.');
         }
         $this->container['sips'] = $sips;
 

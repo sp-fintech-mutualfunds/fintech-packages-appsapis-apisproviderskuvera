@@ -1,12 +1,12 @@
 {
 	"name" : "ApisProvidersKuvera",
 	"display_name" : "Providers Kuvera API",
-	"description" : "<p>Package for connecting to Providers Kuvera using API</p>",
+	"description" : "<p>Providers Kuvera API</p>",
 	"module_type" : "packages",
 	"app_type" : "fintech",
 	"category" : "appsapis",
 	"version" : "0.1.0",
-	"repo" : "https://github.com/sp-fintech/fintech-packages-appsapis-apisproviderskuvera",
+	"repo" : "https://github.com/sp-fintech-mutualfunds/fintech-packages-appsapis-apisproviderskuvera",
 	"class" : "Apps\\Fintech\\Packages\\Apis\\Providers\\Kuvera\\ApisProvidersKuvera",
 	"dependencies" : 
 	{
